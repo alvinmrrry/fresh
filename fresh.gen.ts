@@ -9,6 +9,7 @@ import * as $countdown from "./routes/countdown.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $products from "./routes/products.tsx";
+import * as $profile_userID_ from "./routes/profile/[userID].tsx";
 import * as $profile_index from "./routes/profile/index.tsx";
 import * as $search from "./routes/search.tsx";
 import * as $Countdown from "./islands/Countdown.tsx";
@@ -24,6 +25,7 @@ const manifest = {
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
     "./routes/products.tsx": $products,
+    "./routes/profile/[userID].tsx": $profile_userID_,
     "./routes/profile/index.tsx": $profile_index,
     "./routes/search.tsx": $search,
   },
