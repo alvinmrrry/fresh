@@ -32,5 +32,5 @@ export default function Countdown(props: { target: string }) {
 
   // Otherwise, we format the remaining time using `Intl.RelativeTimeFormat` and
   // render it.
-  return <span>{timeFmt.format(secondsLeft, "seconds")}</span>;
+  return <span> {timeFmt.format(secondsLeft, "seconds")}</span>;
 }
