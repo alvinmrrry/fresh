@@ -1,4 +1,4 @@
-import { Handlers } from "$fresh/server.ts";
+import { Handlers, PageProps } from "$fresh/server.ts";
 
 const CategoryData = [
     {
@@ -49,7 +49,8 @@ export const handler: Handlers = {
     },
 };
 
-export default function blog() {
+export default function blog(props:PageProps) {
+    console.log(props.data);
     return (
         <div>
             this is blog page!
