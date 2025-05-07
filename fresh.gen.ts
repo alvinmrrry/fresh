@@ -7,15 +7,13 @@ import * as $_app from "./routes/_app.tsx";
 import * as $about from "./routes/about.tsx";
 import * as $api_categories from "./routes/api/categories.ts";
 import * as $blog_index from "./routes/blog/index.tsx";
-import * as $countdown from "./routes/countdown.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $products from "./routes/products.tsx";
 import * as $profile_userID_ from "./routes/profile/[userID].tsx";
 import * as $profile_index from "./routes/profile/index.tsx";
 import * as $search from "./routes/search.tsx";
-import * as $Countdown from "./islands/Countdown.tsx";
-import * as $Counter from "./islands/Counter.tsx";
+
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -25,7 +23,6 @@ const manifest = {
     "./routes/about.tsx": $about,
     "./routes/api/categories.ts": $api_categories,
     "./routes/blog/index.tsx": $blog_index,
-    "./routes/countdown.tsx": $countdown,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
     "./routes/products.tsx": $products,
@@ -33,10 +30,7 @@ const manifest = {
     "./routes/profile/index.tsx": $profile_index,
     "./routes/search.tsx": $search,
   },
-  islands: {
-    "./islands/Countdown.tsx": $Countdown,
-    "./islands/Counter.tsx": $Counter,
-  },
+  islands: {},
   baseUrl: import.meta.url,
 } satisfies Manifest;
 
