@@ -50,10 +50,10 @@ export const handler: Handlers = {
 };
 
 export default function blog(props:PageProps) {
-    console.log(props.data);
+    // console.log(props.data);
     return (
         <div>
-            this is blog page!
+            this is blog page {props.data[3].name}
         </div>
     );
 }
