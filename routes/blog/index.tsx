@@ -34,7 +34,7 @@ const CategoryData = [
     {
         name: "category7",
         status: 1,
-        date: Date.now(),
+        date: '2023-10-01',
     },
 ]
 
